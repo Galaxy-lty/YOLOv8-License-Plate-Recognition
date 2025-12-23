@@ -19,7 +19,11 @@
 
 ## 📊 效果展示
 *(请在此处插入你的软件运行截图，例如 screenshot.jpg)*
-> ![系统界面截图](screenshot.jpg)
+
+<img width="2400" height="1200" alt="fig1_loss" src="https://github.com/user-attachments/assets/ca6fbdf9-3b99-424b-8910-15d58f9cfcde" />
+![fig4_val](https://github.com/user-attachments/assets/b1b15bb9-60fa-4268-8f28-204f376027ea)
+<img width="2250" height="1500" alt="fig3_pr" src="https://github.com/user-attachments/assets/b691c8b2-e6bc-4ed4-9608-d90d112f5a0d" />
+<img width="3000" height="2250" alt="fig2_matrix" src="https://github.com/user-attachments/assets/d51c54a0-b219-4c3d-a397-de55ddc3642a" />
 
 ## 📂 项目结构
 ```text
