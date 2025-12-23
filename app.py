@@ -26,7 +26,7 @@ def load_models():
     # 加载你从Kaggle训练好的YOLO模型
     det_model = YOLO('best.pt')
     # 加载OCR模型 (自动下载轻量级模型)
-    ocr_model = PaddleOCR(use_angle_cls=True, lang="ch", show_log=False)
+    ocr_model = PaddleOCR(use_angle_cls=True, lang="ch")
     return det_model, ocr_model
 
 
@@ -98,3 +98,4 @@ if uploaded_file is not None:
                 for info in recognized_text:
 
                     st.markdown(info)
+
