@@ -1,7 +1,14 @@
-ultralytics
-streamlit
-paddlepaddle
-paddleocr
-opencv-python-headless
-numpy<2.0.0
+# 基础图像处理
+numpy==1.24.3
+opencv-python-headless==4.8.0.74
 Pillow
+
+# 深度学习框架 (Paddle系列锁死版本)
+paddlepaddle==2.6.1
+paddleocr==2.7.3
+
+# YOLO系列
+ultralytics
+
+# Web框架
+streamlit
