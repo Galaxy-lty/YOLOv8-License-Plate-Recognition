@@ -13,7 +13,7 @@ st.set_page_config(page_title="车牌检测与识别系统", layout="wide")
 # --- 侧边栏 ---
 st.sidebar.title("设置")
 conf_threshold = st.sidebar.slider("检测置信度 (Confidence)", 0.1, 1.0, 0.25)
-st.sidebar.info("模型加载自: weights/best.pt")
+st.sidebar.info("模型加载自:best.pt")
 
 # --- 标题 ---
 st.title("🚗 深度学习大作业 - 车牌检测与识别系统")
@@ -24,7 +24,7 @@ st.markdown("### 基于 YOLOv8 (目标检测) + PaddleOCR (文字识别)")
 @st.cache_resource
 def load_models():
     # 加载你从Kaggle训练好的YOLO模型
-    det_model = YOLO('weights/best.pt')
+    det_model = YOLO('best.pt')
     # 加载OCR模型 (自动下载轻量级模型)
     ocr_model = PaddleOCR(use_angle_cls=True, lang="ch", show_log=False)
     return det_model, ocr_model
@@ -96,4 +96,5 @@ if uploaded_file is not None:
             if recognized_text:
                 st.success("检测完成！")
                 for info in recognized_text:
+
                     st.markdown(info)
