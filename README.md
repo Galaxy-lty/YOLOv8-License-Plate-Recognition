@@ -20,11 +20,12 @@
 ## 📊 效果展示
 *(请在此处插入你的软件运行截图，例如 screenshot.jpg)*
 
-<img width="2400" height="1200" alt="fig1_loss" src="https://github.com/user-attachments/assets/ca6fbdf9-3b99-424b-8910-15d58f9cfcde" />
-![fig4_val](https://github.com/user-attachments/assets/b1b15bb9-60fa-4268-8f28-204f376027ea)
-<img width="2250" height="1500" alt="fig3_pr" <img width="1580" height="1401" alt="fig5_system" src="https://github.com/user-attachments/assets/6bc4f75f-10bb-4199-99ce-a20decc3ded8" />
-src="https://github.com/user-attachments/assets/b691c8b2-e6bc-4ed4-9608-d90d112f5a0d" />
-<img width="3000" height="2250" alt="fig2_matrix" src="https://github.com/user-attachments/assets/d51c54a0-b219-4c3d-a397-de55ddc3642a" />
+<img width="2400" height="1200" alt="fig1_loss" src="https://github.com/user-attachments/assets/7d99e693-5bca-4150-9229-d302c08b654e" />
+<img width="1580" height="1401" alt="fig5_system" src="https://github.com/user-attachments/assets/21e422ca-55bd-4e32-921a-58b3d41721c2" />
+![fig4_val](https://github.com/user-attachments/assets/39cadcac-1898-4213-bf98-347b48834acb)
+<img width="2250" height="1500" alt="fig3_pr" src="https://github.com/user-attachments/assets/d1b1f34b-fd50-4641-b389-bd1276453cd2" />
+<img width="3000" height="2250" alt="fig2_matrix" src="https://github.com/user-attachments/assets/bf95c4f8-8bef-4123-b830-3a84bf038d18" />
+
 
 ## 📂 项目结构
 ```text
