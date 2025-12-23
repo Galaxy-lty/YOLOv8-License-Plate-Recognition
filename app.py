@@ -1,6 +1,6 @@
 import streamlit as st
 from ultralytics import YOLO
-from paddleocr import PaddleOCR
+#from paddleocr import PaddleOCR
 import cv2
 import numpy as np
 from PIL import Image
@@ -26,7 +26,7 @@ def load_models():
     # 加载你从Kaggle训练好的YOLO模型
     det_model = YOLO('best.pt')
     # 加载OCR模型 (自动下载轻量级模型)
-    ocr_model = PaddleOCR(use_angle_cls=True, lang="ch")
+    #ocr_model = PaddleOCR(use_angle_cls=True, lang="ch")
     return det_model, ocr_model
 
 
@@ -73,14 +73,14 @@ if uploaded_file is not None:
 
                     # OCR 识别
                     # 这里的 cls=True 表示启用方向分类，防止车牌歪了读不准
-                    ocr_res = ocr.ocr(plate_crop, cls=True)
+                    #ocr_res = ocr.ocr(plate_crop, cls=True)
 
                     # 处理OCR结果
                     txt = "未识别"
                     score = 0.0
-                    if ocr_res and ocr_res[0]:
-                        txt = ocr_res[0][0][1][0]
-                        score = ocr_res[0][0][1][1]
+                    #if ocr_res and ocr_res[0]:
+                        #txt = ocr_res[0][0][1][0]
+                        #score = ocr_res[0][0][1][1]
 
                     recognized_text.append(f"📍 内容: **{txt}** (可信度: {score:.2f})")
 
@@ -98,4 +98,5 @@ if uploaded_file is not None:
                 for info in recognized_text:
 
                     st.markdown(info)
+
 
